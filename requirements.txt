@@ -1,2 +1,3 @@
 discord.py
 pymorphy2
+PyQT5
