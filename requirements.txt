@@ -3,3 +3,4 @@ pymorphy2
 PyQT5
 flask
 requests
+gTTS
