@@ -235,11 +235,6 @@ async def rule34(ctx):
             for i in json_response['memes']:
                 res = i['url']
                 a.add(res)
-                with open('DB.txt', 'w+') as f:
-                    f.write(res + '\n')
-    with open('DB.txt', 'w+') as f:
-        for i in a:
-            f.write(i + '\n')
     for i in a:
         await ctx.message.channel.send(i)
 
