@@ -18,6 +18,7 @@ token_yandex = "799be2d4-154f-4bab-9bf1-3abf360b6986"
 token_yandex = '2f31d975-8582-4fcf-98fc-4e518de3f200'
 token_yandex = '852a5ab9-b99e-4478-8687-2d570b9cc7dd'
 
+
 @bot.event
 async def on_ready():
     print('Ready')
