@@ -257,47 +257,6 @@ async def helper(ctx):
     ''')
 
 
-smiles_standart = ['😀', '😉', '😁', '😅', '🙂']
-smiles_local = [':rage:', ':cry:', ':heart_eyes:', ':sunglasses:', ':innocent:', ':alien:']
-print(*smiles_standart)
-flag = False
-score = [0, 0]
-
-
-@bot.command()
-async def skyline(ctx):
-    req = f"https://meme-api.herokuapp.com/gimme/r34"
-
-    sp = [req]
-    res = 'Some shit'
-    for i in sp:
-        response = requests.get(i)
-        if response:
-            json_response = response.json()
-            pprint(json_response)
-            res = json_response['preview'][-1]
-            print(res)
-    await ctx.message.channel.send(res)
-
-
-@bot.command()
-async def rule34(ctx):
-    req = f"https://meme-api.herokuapp.com/gimme/rule34/50"
-
-    sp = [req]
-    a = set()
-    res = 'Some shit'
-    for i in sp:
-        response = requests.get(i)
-        if response:
-            json_response = response.json()
-            pprint(json_response)
-            for i in json_response['memes']:
-                res = i['url']
-                a.add(res)
-    for i in a:
-        await ctx.message.channel.send(i)
-
 app = Flask(__name__)
 
 
