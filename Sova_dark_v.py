@@ -9,7 +9,7 @@ import requests
 import time
 from pprint import pprint
 from func import *
-TOKEN = 'OTM3Njg4MDc3Njk3MTc5Njc4.YffYEw.IVR4EAgb_VbHp9tp24fi-dX1lWY'
+TOKEN = 'put your discord bot token here'
 bot = commands.Bot(command_prefix='!')
 langs = ("ru", "en")
 speaker = 'ru'
